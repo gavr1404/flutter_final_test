@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'dart:async';
 import 'package:flutter_final_test/pages/find_page.dart';
+import 'package:lottie/lottie.dart';
 
 void main() {
   runApp(const MyApp());
@@ -27,7 +28,7 @@ class Splash extends StatefulWidget {
 
 class SplashState extends State<Splash> {
   splashScreenTimer() {
-    Timer(const Duration(seconds: 2), () {
+    Timer(const Duration(seconds: 3), () {
       Navigator.push(
           context, MaterialPageRoute(builder: (context) => const FindData()));
     });
@@ -42,9 +43,12 @@ class SplashState extends State<Splash> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.blue[800],
-      body: const Center(
-        child: Text('зачекайте 2 сек'),
+      backgroundColor: Colors.blue,
+      body: Center(
+        child: Lottie.network(
+          'https://assets10.lottiefiles.com/packages/lf20_lqge6px5.json',
+          height: 300,
+        ),
       ),
     );
   }
