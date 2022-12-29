@@ -1,5 +1,5 @@
 # flutter_final_test
-![image alt](https://github.com/gavr1404/flutter_final_test/image/project_image.jpg)
+![image alt](https://github.com/gavr1404/flutter_final_test/raw/master/image/project_image.jpg)
 
 
 A new Flutter project.
